@@ -36,8 +36,6 @@ public class DeletePatientSteps extends RemoteTestBase {
 	
 	private String password = "Admin123";
 	
-	private static String REASON = "patient discharged";
-	
 	@Before(RunTest.HOOK.DELETE_PATIENT)
 	public void setUp() throws IOException {
 		TestsUtil.addPatient(url,jsonData,username,password);
